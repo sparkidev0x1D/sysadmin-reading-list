@@ -120,6 +120,7 @@ That said, it is on every system, so every *NIX sysadmin needs to know `bash`.
 
 Here are some useful resources to help you step up your shell scripting game:
 
+- [The Art of the Command Line](https://github.com/jlevy/the-art-of-command-line) - A good set of notes and tips on using the command-line useful when working on Linux/Unix.
 - [Advancing in the Bash Shell](http://samrowe.com/wordpress/advancing-in-the-bash-shell/) - Sam Rowe's `bash` as CLI tutorial.
 - [Bash Pitfalls](http://mywiki.wooledge.org/BashPitfalls) - Greg Wooledge has a great list of unpleasant surprises in `bash`.
 - [Bash Guide](https://mywiki.wooledge.org/BashGuide) - Gives examples of good practice when writing `bash` scripts. It is targeted at beginning users with no advanced knowledge.
@@ -329,6 +330,7 @@ When you have a multi-gigabyte logfile, it's a lot less painful to look at just 
 
 - [debuggex.com/](https://www.debuggex.com/) will visualize regular expressions graphically.
 - [Introducing Regular Expressions](http://shop.oreilly.com/product/0636920012337.do)
+- [Regex for Noobs](https://www.janmeppe.com/blog/regex-for-noobs/) - An illustrated guide to regex that aims to provide a gentle introduction for people who never have fiddled with regex, want to, but are kind of intimidated by the whole thing.
 - [Regular Expressions Cookbook](http://shop.oreilly.com/product/0636920023630.do)
 
 ### Sed & Awk
