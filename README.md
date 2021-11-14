@@ -36,9 +36,12 @@ A reading list for the larval stage sysadmin. This list is focused on the UNIX f
     - [Google Cloud](#google-cloud)
     - [OpenStack](#openstack)
   - [Configuration Management](#configuration-management)
-  - [Docker](#docker)
-    - [Installing Docker](#installing-docker)
-    - [Learning Docker](#learning-docker)
+  - [Container Tooling](#container-tooling)
+    - [Containerd](#containerd)
+      - [Installing and Learning Containerd](#installing-and-learning-containerd)
+    - [Docker](#docker)
+      - [Installing Docker](#installing-docker)
+      - [Learning Docker](#learning-docker)
   - [Kubernetes](#kubernetes)
     - [Tutorials](#tutorials)
     - [Utilities](#utilities)
@@ -76,6 +79,7 @@ So you've got your first sysadmin/sre job or internship. Congratulations, it's g
 - [A Few Ops Lessions We All Learn the Hard Way](https://www.netmeister.org/blog/ops-lessons.html) - A collection of lessons that everyone in Ops inevitably learns. You may not personally experience all of them, but they'll ring true after you're in ops for a while.
 - [Clean Code](https://smile.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) - Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code "on the fly" into a book that will instill within you the values of a software craftsman and make you a better programmer-but only if you work at it.
 - [Continuous Delivery](https://smile.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) - A book that has rapidly become *the* guide to planning and implementing build pipelines.
+- [DevOps Roadmap](https://roadmap.sh/devops) - Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.
 - [Effective DevOps](http://shop.oreilly.com/product/0636920039846.do) - A practical guide for creating affinity among teams and promoting efficient tool usage in your company.
 - [Git Magic (free ebook)](http://www-cs-students.stanford.edu/~blynn/gitmagic/) - `git` is a version control Swiss army knife. A reliable versatile multipurpose revision control tool whose extraordinary flexibility makes it tricky to learn, let alone master.
 - [Hello DNS](https://github.com/ahupowerdns/hello-dns) - Every sysadmin/sre needs to know how DNS works. Start with [DNS Basics](https://github.com/ahupowerdns/hello-dns/blob/master/basic.md) it's a good introduction.
@@ -131,7 +135,7 @@ Here are some useful resources to help you step up your shell scripting game:
 - [Safe Ways to do Things in Bash](https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md) - An excellent set of tips from the authors of [shellharden](https://github.com/anordal/shellharden).
 - [shellcheck](https://github.com/koalaman/shellcheck) is a lint for `bash`. It'll help you find unused variables, deprecated syntax and other things that make your `bash` scripts less stable. You can install it with `apt-get`, `brew`, `cabal`, or `yum`.
 - [shellharden](https://github.com/anordal/shellharden) - is a syntax highlighter and a tool to semi-automate the rewriting of scripts to ShellCheck conformance, mainly focused on quoting.
-- [zshelldoc](https://github.com/zdharma/zshelldoc) - Documentation generator for Bash & ZSH, with call-trees, comment extraction, etc.
+- [zshelldoc](https://github.com/zdharma-continuum/zshelldoc) - Documentation generator for Bash & ZSH, with call-trees, comment extraction, etc.
 
 Finally, remember that `bash` is not `sh`. If you're writing a script in `bash`, and testing it with `bash`, don't put `#!/bin/sh` as the shebang. Firstly, because `bash` behaves differently when called as `sh`, and secondly, not all *NIX systems (and not even all linux distributions) use `bash` as their `/bin/sh` any more.
 
@@ -152,10 +156,9 @@ A couple of places to go into as training are:
 
 #### Python Books
 
-- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/), a free Book that helps you automate boring and repetitive tasks with Python.
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/), a free book that helps you automate boring and repetitive tasks with Python.
 - [Programming Python](http://shop.oreilly.com/product/9780596158118.do), a well-written O'Reilly book, short and concise.
-- [Python 101 --- Introduction to Python](http://www.davekuhlman.org/python_101.html), a free book that introduces and explains many python concepts.
-- [20 Python Libraries You Aren't Using (But Should)](http://www.oreilly.com/programming/free/20-python-libraries-you-arent-using-but-should.csp), a free Book by Caleb Hattingh published by O'Reilly (No real Email address needed.)
+- [20 Python Libraries You Aren't Using (But Should)](http://www.oreilly.com/programming/free/20-python-libraries-you-arent-using-but-should.csp), a free book by Caleb Hattingh published by O'Reilly (No real Email address needed.)
 
 #### Tutorials @ Python
 
@@ -164,7 +167,7 @@ A couple of places to go into as training are:
 #### Python & Sysadmin
 
 - [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/scenarios/admin/), a neat place to see usage and examples of Python and not only for systems administration.
-- [WSGI - Web Server Gateway Interface](http://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html), the Python implementation of web servers.
+- [WSGI - Web Server Gateway Interface](http://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html), a Python implementation of web servers.
 
 #### Python & Deployment Utils
 
@@ -228,7 +231,7 @@ Perl has a long history of being the system administrator's friend, bringing the
 
 - [AWSCli](https://github.com/aws/aws-cli) provides a unified command line interface to Amazon Web Services. Wean yourself off of the webui if you want to be truly productive.
 - [og-aws](https://github.com/open-guides/og-aws) is an excellent resource to AWS written by and for engineers who use AWS extensively.
-- [S3cmd](http://s3tools.org/s3cmd) is a free command line tool and client for uploading, retrieving and managing data in Amazon S3 and other cloud storage service providers that use the S3 protocol, such as Google Cloud Storage or DreamHost DreamObjects.
+- [S3cmd](http://s3tools.org/s3cmd) is a free command line tool and client for uploading, retrieving and managing data in Amazon S3 and other cloud storage service providers that use the S3 protocol, such as Google Cloud Storage, Backblaze B2 or DreamHost DreamObjects.
 
 #### Azure
 
@@ -266,19 +269,33 @@ Treating your configuration as something described in text files allows you to t
 
 There are several good options:
 
-- [Ansible](http://www.ansible.com/) is designed to be minimal in nature, consistent, secure, and highly reliable. Is owned & supported by Red Hat.
+- [Ansible](http://www.ansible.com/) is designed to be minimal in nature, consistent, secure, and highly reliable. Owned & supported by Red Hat.
 - [CFEngine](https://cfengine.com) has been in continuous development since 1993.  Unlike some of its peers on this list, it is written in C and is built with speed and scalability in mind.  It should be considered for very, very large systems and for very small (think embedded) systems.
 - [Chef](http://www.opscode.com/chef/) is written in Ruby and Erlang and uses a Ruby DSL to describe system configuration.
 - [Chocolatey](https://chocolatey.org/) a Windows software management tool.
 - [Puppet](http://puppetlabs.com/) makes it easy to automate the provisioning, configuration and ongoing management of your machines and the software running on them. Make rapid, repeatable changes and automatically enforce the consistency of systems and devices – across physical and virtual machines, on premise or in the cloud.
 - [Salt](http://www.saltstack.com/) orchestrates the build and ongoing management of your infrastructure.
 
-### Docker
+### Container Tooling
 
-[Docker](https://www.docker.com/what-docker) is a tool for running and managing
-containers. Containers are rapidly growing in popularity for local development (as an alternative to virtual machines), and can also run software in production with tools like [Kubernetes](https://kubernetes.io/) or [Amazon ECS](https://aws.amazon.com/ecs/).
+Containers package software and all its dependencies in a single package that can be run in isolation from other containers or applications running on the server, without the overhead of a full virtual machine.
+#### Containerd
 
-#### Installing Docker
+[Containerd](https://github.com/containerd/containerd) is an industry-standard container runtime with an emphasis on simplicity, robustness and portability. It is available as a daemon for Linux and Windows, which can manage the complete container lifecycle of its host system: image transfer and storage, container execution and supervision, low-level storage and network attachments, etc.
+
+##### Installing and Learning Containerd
+
+Follow the installation instructions for your preferred platform (Currently, only Linux and Windows are directly supported) and start learning how to use Containerd:
+
+- [Getting started with containerd](https://containerd.io/docs/getting-started/)
+
+On macOS, you can use Lima, which launches Linux virtual machines with automatic file sharing, port forwarding, and [containerd](https://containerd.io/) installed. You can use the [lima xbar plugin](https://github.com/unixorn/lima-xbar-plugin) for a simple menubar application to control your Lima VMs.
+
+#### Docker
+
+[Docker](https://www.docker.com/what-docker) is a tool for running and managing containers. Containers are rapidly growing in popularity for local development (as an alternative to virtual machines), and can also run software in production with tools like [Kubernetes](https://kubernetes.io/) or [Amazon ECS](https://aws.amazon.com/ecs/).
+
+##### Installing Docker
 
 Follow the installation instructions for your preferred platform:
 
@@ -287,7 +304,7 @@ Follow the installation instructions for your preferred platform:
   - Linux usually requires a separate installation of [docker-compose](https://docs.docker.com/compose/install/)
 - [Docker CE for Windows](https://docs.docker.com/docker-for-windows/install/)
 
-#### Learning Docker
+##### Learning Docker
 
 - [The Docker Book](https://www.dockerbook.com/) - An excellent resource for getting started with Docker. This book is quick & easy to read.
 
@@ -299,9 +316,11 @@ Kubernetes is a portable open-source container orchestration system used to auto
 
 There are many good tutorials at [kubernetes.io](https://kubernetes.io/docs/home/). I recommend you start with either the [minikube](https://minikube.sigs.k8s.io/docs/start/) walkthrough since it will get you a running test cluster quickly, or enable the kubernetes cluster option in [Docker Desktop](https://www.docker.com/products/docker-desktop).
 
+VMWare sponsors a free set of online Kubernetes courses at [https://kube.academy/courses](https://kube.academy/courses).
+
 If you want to understand everything that is involved in getting a Kubernetes cluster up and running, [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by Kelsey Hightower is hard to beat.
 
-Ever wondered exactly what happens when you type something `kubectl run nginx --image=nginx --replicas=3` to make everything happen? [What happens when K8s...](https://github.com/jamiehannaford/what-happens-when-k8s/) is a guide that leads you through the full lifecycle of a request from the client to the kubelet, linking off to the source code where necessary to illustrate what's going on.
+Have you ever wondered exactly what happens when you type something `kubectl run nginx --image=nginx --replicas=3` to make everything happen? [What happens when K8s...](https://github.com/jamiehannaford/what-happens-when-k8s/) is a guide that leads you through the full lifecycle of a request from the client to the kubelet, linking off to the source code where necessary to illustrate what's going on.
 
 #### Utilities
 
@@ -373,7 +392,7 @@ Whether or not your shop uses `git` internally, you're going to end up needing t
 
 ### SSH
 
-- [awesome-ssh](https://github.com/moul/awesome-ssh) - A curated list of ssh apps, libraries and other resources.
+- [awesome-ssh](https://github.com/moul/awesome-ssh) - A curated list of `ssh` apps, libraries and other resources.
 - [SSH, The Secure Shell: The Definitive Guide, 2nd Edition](http://shop.oreilly.com/product/9780596008956.do)
 
 ### Testing
@@ -382,7 +401,7 @@ Testing is incredibly important and you should undertake this for your infrastru
 
 #### Test Harnesses
 
-- **Test Kitchen** [https://kitchen.ci](https://kitchen.ci) - Test your configuration management tooling. Was originally written to test chef cookbooks, but can be used for other configuration management systems as well.
+- **Test Kitchen** [https://kitchen.ci](https://kitchen.ci) - Test your configuration management tooling. Test kitchen was originally written to test chef cookbooks, but can be used for other configuration management systems as well.
 
 ### Text Editors
 
@@ -419,16 +438,16 @@ If you're looking for `emacs` packages, the following online package index is th
 
 There are several excellent starter kits out there, with varying delineations of wizz-bang. Roughly sorted by wizz-bang, here are the starter kits that exist, with spacemacs being the most popular:
 
-- [https://github.com/technomancy/better-defaults](https://github.com/technomancy/better-defaults)
-- [https://github.com/hlissner/doom-emacs](https://github.com/hlissner/doom-emacs)
-- [https://github.com/bbatsov/prelude](https://github.com/bbatsov/prelude)
-- [https://github.com/syl20bnr/spacemacs](https://github.com/syl20bnr/spacemacs)
+- [technomancy/better-defaults](https://github.com/technomancy/better-defaults)
+- [hlissner/doom-emacs](https://github.com/hlissner/doom-emacs)
+- [bbatsov/prelude](https://github.com/bbatsov/prelude)
+- [syl20bnr/spacemacs](https://github.com/syl20bnr/spacemacs)
 
 Here are some `emacs` configurations for inspiration:
 
-- Magnar Sveen's very interesting and original `emacs` config! [https://github.com/magnars/.emacs.d](https://github.com/magnars/.emacs.d)
+- Magnar Sveen's very interesting and original `emacs` config! [magnars/.emacs.d](https://github.com/magnars/.emacs.d)
 - Phil Hagelberg's config: [https://git.sr.ht/~technomancy/dotfiles/tree/master/.emacs.d](https://git.sr.ht/~technomancy/dotfiles/tree/master/.emacs.d)
-- Steve Purcell's excellent config: [https://github.com/purcell/emacs.d](https://github.com/purcell/emacs.d)
+- Steve Purcell's excellent config: [purcell/emacs.d](https://github.com/purcell/emacs.d)
 
 #### Visual Editors and IDEs
 
@@ -444,10 +463,17 @@ There are GUI versions of `vim` and `emacs` that have ardent followers.
 
 - [Arrested Devops](https://www.arresteddevops.com/) is hosted by Matt Stratton, Trevor Hess, and Bridget Kromhout. ADO is the podcast that helps you achieve understanding, develop good practices, and operate your team and organization for maximum DevOps awesomeness.
 - [Code as Craft](http://codeascraft.com/) is Etsy's ops blog and is full of well written examples of dealing with real-world problems at scale.
+- [Corecursive](https://corecursive.com/) - Each episode someone shares the fascinating story behind a piece of software being built.
+- [DevOps'ish](https://devopsish.com/) - A weekly newsletter assembled by open source contributor, DevOps leader, and Cloud Native Computing Foundation (CNCF) Ambassador Chris Short.
 - [Hey, Scripting Guy! Blog](https://blogs.technet.microsoft.com/heyscriptingguy/) is a blog that answers common (and some uncommon) PowerShell queries.
 - [Julia Evans' Blog](http://jvns.ca/) - Julia writes a great blog where she dives into interesting ops topics and explains them clearly.
 - [Kitchen Soap](http://www.kitchensoap.com/) - John Alspaw is the CTO at Etsy and writes a great blog about web operations and operating at scale and other things that are interesting to ops types.
-- [PowerScripting Podcast](https://powershell.org/podcast/) is hosted by Jon Walz and Hal Rottenberg.
+- [Last Week in AWS](https://www.lastweekinaws.com/) - Corey Quinn's weekly newsletter about the latest goings-on in the world of AWS.
+- [Last Week in Kubernetes Development](https://lwkd.info/) - Weekly newsletter summarizing code activity in the Kubernetes project: merges, PRs, deprecations, version updates, release schedules, and the weekly community meeting.
+- [Monitoring Weekly](https://monitoring.love/) - Weekly compilation of curated articles, news and tools related to monitoring.
+- [On the Metal](https://oxide.computer/podcasts) - Bryan Cantrill and Jessie Frazelle host a podcast about all sorts of interesting aspects of computing.
+- [PowerScripting Podcast](https://powershell.org/category/podcast/) is hosted by Jon Walz and Hal Rottenberg.
+- [SRE Weekly](https://sreweekly.com/) - SRE Weekly is a newsletter devoted to everything related to keeping a site or service available as consistently as possible.
 
 ## Online Communities
 
@@ -465,7 +491,7 @@ Packetlife has some great cheat sheets and posters [here](https://packetlife.net
 
 ### Free Services
 
-- A [list](https://github.com/ripienaar/free-for-dev) of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev.
+- [Free-for-Dev](https://github.com/ripienaar/free-for-dev) is a list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev.
 
 ### Miscellanea
 
@@ -487,24 +513,25 @@ Packetlife has some great cheat sheets and posters [here](https://packetlife.net
 
 ### Career
 
--Alice Goldfuss wrote an excellent article, [How to Get Into SRE](https://blog.alicegoldfuss.com/how-to-get-into-sre/), about her path to becoming an SRE.
--Alice also gave a great presentation - [Passing the Console: Fostering the Next Generation of Ops Professionals](https://www.usenix.org/conference/lisa16/conference-program/presentation/goldfuss) at LISA16.
--Julia Evans has a couple of great resources on making your 1-on-1's with your manager more effective. 1-on-1s should _not_ just be a status report on what you're working on - you should be using them to focus on more big picture goals (both yours and the organizations) and your career. Read her article on [1-on-1 ideas](https://jvns.ca/blog/2015/03/06/1-1-topic-ideas/), and I recommend buying her [Help, I have a Manager!](https://wizardzines.com/zines/manager/) zine.
+- Alice Goldfuss wrote an excellent article, [How to Get Into SRE](https://blog.alicegoldfuss.com/how-to-get-into-sre/), about her path to becoming an SRE.
+- Alice also gave a great presentation - [Passing the Console: Fostering the Next Generation of Ops Professionals](https://www.usenix.org/conference/lisa16/conference-program/presentation/goldfuss) at LISA16.
+- Julia Evans has a couple of great resources on making your 1-on-1's with your manager more effective. 1-on-1s should _not_ just be a status report on what you're working on - you should be using them to focus on more big picture goals (both yours and the organizations) and your career. Read her article on [1-on-1 ideas](https://jvns.ca/blog/2015/03/06/1-1-topic-ideas/), and I recommend buying her [Help, I have a Manager!](https://wizardzines.com/zines/manager/) zine.
 
 ### Communication
 
 Writing good documentation and design docs is as important as writing code. The more senior you are, the more writing you're going to have to do - communication skills are a must.
 
-- Email - Like it or not, you're going to write a _lot_ of email in the course of you work. Lazarus Lazaridis wrote a good article on [Composing Better Emails](https://iridakos.com/how-to/2019/06/26/composing-better-emails.html)
+- Email - Like it or not, you're going to write a _lot_ of email in the course of your work. Lazarus Lazaridis wrote a good article on [Composing Better Emails](https://iridakos.com/how-to/2019/06/26/composing-better-emails.html)
 - Gergely Orosz wrote an excellent blog post about [Undervalued Software Engineering Skills: Writing Well](https://blog.pragmaticengineer.com/on-writing-well/).
 
 ### Finance/Salary
 
 - Patrick McKenzie wrote a great blog post on [salary negotiation](https://www.kalzumeus.com/2012/01/23/salary-negotiation/). Salary negotiation is one of the few times in your life where a five minute conversation can earn you (or _cost_ you!) thousands of dollars - be prepared.
 - Patrick also has a good podcast episode on salary negotiation - [Kalzumeus Podcast Episode 12: Salary Negotiation with Josh Doody](https://www.kalzumeus.com/2016/06/03/kalzumeus-podcast-episode-12-salary-negotiation-with-josh-doody/)  (there's a transcript too). You have to do it, it affects your life, you should do it well.
+- [An Engineer's Guide to Stock Options](https://blog.alexmaccaw.com/an-engineers-guide-to-stock-options/) - Alex McCaw wrote a good blog post explaining stock options in plain English.
 - [The Holloway Guide to Equity Compensation](https://www.holloway.com/g/equity-compensation) - Stock options, RSUs, job offers, and taxes — a detailed reference, including hundreds of resources, explained from the ground up.
 - [What I Wish I'd Known About Equity Before Joining A Unicorn](https://gist.github.com/yossorion/4965df74fd6da6cdc280ec57e83a202d) - This is an excellent (though USA-centric) summary of how to value stock options and what the tax implications are and how to minimize potential tax. I heartily recommend reading it before you accept any offers involving stock or stock options as part of your compensation.
 
 ## License
 
-This repository is copyright 2017-2020 Joseph Block under a [Attribution-NonCommercial-ShareAlike 4.0 International](#attribution-noncommercial-sharealike-40-international) license.
+This repository is copyright 2017-2021 Joseph Block under a [Attribution-NonCommercial-ShareAlike 4.0 International](#attribution-noncommercial-sharealike-40-international) license.
