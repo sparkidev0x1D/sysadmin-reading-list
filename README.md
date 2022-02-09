@@ -258,7 +258,7 @@ Perl has a long history of being the system administrator's friend, bringing the
 - [Community](https://www.openstack.org/community/) Where to go and who to ask for help.
 - [Planet OpenStack](http://planet.openstack.org) An aggregated feed from across the Internet of OpenStack-related content, including contributions from individuals.
 - [Public Clouds](https://www.openstack.org/marketplace/public-clouds/) Similar to AWS, GCP or Azure, this is a list of providers who offer cloud services running on OpenStack.
-- [Stackalytics](https://www.stackalytics.com) Code contribution statistics to OpenStack and related projects.
+- [Stackalytics](https://www.stackalytics.io) Code contribution statistics to OpenStack and related projects.
 - [SuperUser](https://superuser.openstack.org) SuperUser is an online 'publication' aggregating and editorialising content related to OpenStack and Open Infrastructure.
 
 ### Configuration Management
@@ -528,6 +528,7 @@ Packetlife has some great cheat sheets and posters [here](https://packetlife.net
 - Alice Goldfuss wrote an excellent article, [How to Get Into SRE](https://blog.alicegoldfuss.com/how-to-get-into-sre/), about her path to becoming an SRE.
 - Alice also gave a great presentation - [Passing the Console: Fostering the Next Generation of Ops Professionals](https://www.usenix.org/conference/lisa16/conference-program/presentation/goldfuss) at LISA16.
 - Julia Evans wrote a couple of great resources on making your 1-on-1's with your manager more effective. 1-on-1s should _not_ just be a status report on what you're working on - you should be using them to focus on more big picture goals (both yours and the organizations) and your career. Read her article on [1-on-1 ideas](https://jvns.ca/blog/2015/03/06/1-1-topic-ideas/), and I recommend buying her [Help, I have a Manager!](https://wizardzines.com/zines/manager/) zine.
+- The [Fearless Salary Negotiation](https://fearlesssalarynegotiation.com) site is a good read overall, especially the article on handling a [Salary Expectations Interview Question](https://fearlesssalarynegotiation.com/salary-expectations-interview-question/) when the recruiter asks. To quote them, "Your salary expectations are one of the few things you know that the company doesn’t. That makes them extremely valuable and sharing them can make your salary negotiations very difficult and even cost you a lot of money." so read (at least) this article before you start your next job interview cycle.
 
 ### Communication
 
@@ -542,6 +543,7 @@ Writing good documentation and design docs is as important as writing code. The 
 - Patrick also has a good podcast episode on salary negotiation - [Kalzumeus Podcast Episode 12: Salary Negotiation with Josh Doody](https://www.kalzumeus.com/2016/06/03/kalzumeus-podcast-episode-12-salary-negotiation-with-josh-doody/)  (there's a transcript too). You have to do it, it affects your life, you should do it well.
 - [An Engineer's Guide to Stock Options](https://blog.alexmaccaw.com/an-engineers-guide-to-stock-options/) - Alex McCaw wrote a good blog post explaining stock options in plain English.
 - [The Holloway Guide to Equity Compensation](https://www.holloway.com/g/equity-compensation) - Stock options, RSUs, job offers, and taxes — a detailed reference, including hundreds of resources, explained from the ground up.
+- [Understanding Startup Stock Options](https://medium.com/swlh/understanding-startup-stock-options-4bf9cc26089e) - Ben Beltzer explains when you should exercise, how to get paid out, how much you'll make, and how much tax you'll probably have to pay (get advice from your own accountant, don't rely on a blog post).
 - [What I Wish I'd Known About Equity Before Joining A Unicorn](https://gist.github.com/yossorion/4965df74fd6da6cdc280ec57e83a202d) - This is an excellent (though USA-centric) summary of how to value stock options and what the tax implications are and how to minimize potential tax. I heartily recommend reading it before you accept any offers involving stock or stock options as part of your compensation.
 
 ## License
