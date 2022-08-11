@@ -77,7 +77,7 @@ So you've got your first sysadmin/sre job or internship. Congratulations, it's g
 
 ## Articles and Books to Read
 
-- [A Few Ops Lessions We All Learn the Hard Way](https://www.netmeister.org/blog/ops-lessons.html) - A collection of lessons that everyone in Ops inevitably learns. You may not personally experience all of them, but they'll ring true after you're in ops for a while.
+- [A Few Ops Lessions We All Learn the Hard Way](https://www.netmeister.org/blog/ops-lessons.html) - A collection of lessons that everyone in ops and SRE inevitably learns. You may not personally experience all of them, but they'll ring true after you're in ops for a while.
 - [Clean Code](https://smile.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) - Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code "on the fly" into a book that will instill within you the values of a software craftsman and make you a better programmer-but only if you work at it.
 - [Continuous Delivery](https://smile.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) - A book that has rapidly become *the* guide to planning and implementing build pipelines.
 - [DevOps Roadmap](https://roadmap.sh/devops) - Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.
@@ -86,7 +86,7 @@ So you've got your first sysadmin/sre job or internship. Congratulations, it's g
 - [Hello DNS](https://github.com/ahupowerdns/hello-dns) - Every sysadmin/sre needs to know how DNS works. Start with [DNS Basics](https://github.com/ahupowerdns/hello-dns/blob/master/basic.md) it's a good introduction.
 - [Lean Startup](https://smile.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898) or [Lean Enterprise](https://smile.amazon.com/Lean-Enterprise-Performance-Organizations-Innovate/dp/1449368425) - This pair describes the process surrounding implementation and use of Lean principles in Startup and Enterprise organizations. There are a number of companion pieces that extend the principles to specific fields of study and implementation, such as [Lean Analytics](https://smile.amazon.com/Lean-Analytics-Better-Startup-Faster/dp/1449335675).
 - [LinkedIn's School of SRE](https://github.com/linkedin/school-of-sre) - Linkedin is using this curriculum for onboarding non-traditional hires and new college grads into the SRE role.
-- [Site Reliability Engineering](http://shop.oreilly.com/product/0636920041528.do) - How Google Runs Production Systems. This can be read online for free at Google's SRE [site](https://landing.google.com/sre/book/index.html).
+- [Site Reliability Engineering](http://shop.oreilly.com/product/0636920041528.do) - How Google Runs Production Systems. This can be read online for free at Google's [SRE site](https://landing.google.com/sre/book/index.html).
 - [Systems Performance: Enterprise and Cloud](https://smile.amazon.com/Systems-Performance-Enterprise-Brendan-Gregg/dp/0133390098) by Brendan Gregg, this book is an award winner and a favorite of many a sysadmin and SRE, it addresses systems performance at scale.
 - [The Art of Capacity Planning](https://smile.amazon.com/Art-Capacity-Planning-Scaling-Resources-ebook/dp/B0026OR2Y0) - John Allspaw's book is a hands-on and practical guide to planning for such growth, with many techniques and considerations to help you plan, deploy, and manage web application infrastructure.
 - [The Art of Monitoring](https://artofmonitoring.com/) - James Turnbull's book on the art of modern application and infrastructure monitoring and metrics.
@@ -125,11 +125,12 @@ That said, it is on every system, so every *NIX sysadmin needs to know `bash`.
 
 Here are some useful resources to help you step up your shell scripting game:
 
-- [The Art of the Command Line](https://github.com/jlevy/the-art-of-command-line) - A good set of notes and tips on using the command-line useful when working on Linux/Unix.
+- [The Art of the Command Line](https://github.com/jlevy/the-art-of-command-line) - A good set of notes and tips on using the command-line that is useful when working on Linux/Unix.
 - [Advancing in the Bash Shell](http://samrowe.com/wordpress/advancing-in-the-bash-shell/) - Sam Rowe's `bash` as CLI tutorial.
-- [Bash Pitfalls](http://mywiki.wooledge.org/BashPitfalls) - Greg Wooledge has a great list of unpleasant surprises in `bash`.
+- [Bash Guide For Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/) -  A practical guide which, while not always being too serious, tries to give real-life instead of theoretical examples.
 - [Bash Guide](https://mywiki.wooledge.org/BashGuide) - Gives examples of good practice when writing `bash` scripts. It is targeted at beginning users with no advanced knowledge.
-- [Commandlinefu](https://www.commandlinefu.com/) - an extensive list of `bash` oneliners for almost every task you may need to accomplish.
+- [Bash Pitfalls](http://mywiki.wooledge.org/BashPitfalls) - Greg Wooledge has a great list of unpleasant surprises in `bash`.
+- [Commandlinefu](https://www.commandlinefu.com/) - An extensive list of `bash` oneliners for almost every task you may need to accomplish.
 - [Google's Shell Style Guide](https://google.github.io/styleguide/shell.xml) lists what Google's developers consider best practices for `bash` scripts.
 - [Learning the Bash Shell](http://shop.oreilly.com/product/9780596009656.do) - It's hard to go wrong with an O'Reilly reference on anything, really.
 - [Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible) - A collection of pure `bash` alternatives to external processes.
@@ -147,7 +148,6 @@ Often you'll find yourself in a Windows enviroment, like it or not. These resour
 - [Best Practices and Style guide](https://github.com/PoshCode/PowerShellPracticeAndStyle)
 - [Powershell Slack](http://poshcode.org) - Think of it as a virtual Powershell user's group.
 - [PowerShell.org eBooks](https://leanpub.com/u/devopscollective/)
-- [PS Cmdlets In Your Inbox](https://github.com/MaxAnderson95/Cmdlets_In_Your_Inbox) lets you schedule a task to get PowerShell Cmdlets via email daily or at the command line.
 
 ### Python
 
@@ -218,7 +218,6 @@ Perl has a long history of being the system administrator's friend, bringing the
 #### Blog Posts
 
 - [Perl on the Rise for Devops](https://scalability.org/2017/01/perl-on-the-rise-for-devops/)
-- [A Perl Toolchain for Building Microservices at Scale](https://engineering.semantics3.com/a-perl-toolchain-for-building-micro-services-at-scale-8851626a4b1b)
 - [Perl tricks for system administrators](https://opensource.com/life/16/7/perl-tricks-system-administrators)
 
 ## Tools
@@ -357,6 +356,7 @@ Enter regexes and the `grep` family of tools.
 
 When you have a multi-gigabyte logfile, it's a lot less painful to look at just the entries generated by the service that you got alerted about. Even better to only look at the error messages from the service, and something as basic as `grep -i yourservice < log | grep -i errorcode` can convert a potentially multi-hour ordeal into a quick minute or two task.
 
+- [autoregex](https://www.autoregex.xyz/home) - This site will let you paste a regex in and have it translate it to English, or make an English statement like "First character A, second character B, up to three B characters, then a C and end of line" and have that translated to `^A.{0,3}BC$`.
 - [debuggex.com/](https://www.debuggex.com/) will visualize regular expressions graphically.
 - [Introducing Regular Expressions](http://shop.oreilly.com/product/0636920012337.do)
 - [Regex for Noobs](https://www.janmeppe.com/blog/regex-for-noobs/) - An illustrated guide to regex that aims to provide a gentle introduction for people who never have fiddled with regex, want to, but are kind of intimidated by the whole thing.
@@ -453,7 +453,7 @@ There are several excellent starter kits out there, with varying delineations of
 - [bbatsov/prelude](https://github.com/bbatsov/prelude)
 - [hlissner/doom-emacs](https://github.com/hlissner/doom-emacs)
 - [syl20bnr/spacemacs](https://github.com/syl20bnr/spacemacs)
-- [technomancy/better-defaults](https://github.com/technomancy/better-defaults)
+- [technomancy/better-defaults](https://git.sr.ht/~technomancy/better-defaults)
 
 Here are some `emacs` configurations for inspiration:
 
@@ -528,7 +528,6 @@ Packetlife has some great cheat sheets and posters [here](https://packetlife.net
 - Alice Goldfuss wrote an excellent article, [How to Get Into SRE](https://blog.alicegoldfuss.com/how-to-get-into-sre/), about her path to becoming an SRE.
 - Alice also gave a great presentation - [Passing the Console: Fostering the Next Generation of Ops Professionals](https://www.usenix.org/conference/lisa16/conference-program/presentation/goldfuss) at LISA16.
 - Julia Evans wrote a couple of great resources on making your 1-on-1's with your manager more effective. 1-on-1s should _not_ just be a status report on what you're working on - you should be using them to focus on more big picture goals (both yours and the organizations) and your career. Read her article on [1-on-1 ideas](https://jvns.ca/blog/2015/03/06/1-1-topic-ideas/), and I recommend buying her [Help, I have a Manager!](https://wizardzines.com/zines/manager/) zine.
-- The [Fearless Salary Negotiation](https://fearlesssalarynegotiation.com) site is a good read overall, especially the article on handling a [Salary Expectations Interview Question](https://fearlesssalarynegotiation.com/salary-expectations-interview-question/) when the recruiter asks. To quote them, "Your salary expectations are one of the few things you know that the company doesn’t. That makes them extremely valuable and sharing them can make your salary negotiations very difficult and even cost you a lot of money." so read (at least) this article before you start your next job interview cycle.
 
 ### Communication
 
@@ -540,8 +539,11 @@ Writing good documentation and design docs is as important as writing code. The 
 ### Finance/Salary
 
 - Patrick McKenzie wrote a great blog post on [salary negotiation](https://www.kalzumeus.com/2012/01/23/salary-negotiation/). Salary negotiation is one of the few times in your life where a five minute conversation can earn you (or _cost_ you!) thousands of dollars - be prepared.
-- Patrick also has a good podcast episode on salary negotiation - [Kalzumeus Podcast Episode 12: Salary Negotiation with Josh Doody](https://www.kalzumeus.com/2016/06/03/kalzumeus-podcast-episode-12-salary-negotiation-with-josh-doody/)  (there's a transcript too). You have to do it, it affects your life, you should do it well.
+- Patrick also has a good podcast episode on salary negotiation - [Kalzumeus Podcast Episode 12: Salary Negotiation with Josh Doody](https://www.kalzumeus.com/2016/06/03/kalzumeus-podcast-episode-12-salary-negotiation-with-josh-doody/) (there's a transcript too). You have to do it, it affects your life, you should do it well.
+- The [Fearless Salary Negotiation](https://fearlesssalarynegotiation.com) site is a good read overall, especially the article on handling a [Salary Expectations Interview Question](https://fearlesssalarynegotiation.com/salary-expectations-interview-question/) when the recruiter asks. To quote them, "Your salary expectations are one of the few things you know that the company doesn’t. That makes them extremely valuable and sharing them can make your salary negotiations very difficult and even cost you a lot of money." so read (at least) this article before you start your next job interview cycle.
 - [An Engineer's Guide to Stock Options](https://blog.alexmaccaw.com/an-engineers-guide-to-stock-options/) - Alex McCaw wrote a good blog post explaining stock options in plain English.
+- [Equity 101](https://blog.pragmaticengineer.com/equity-for-software-engineers/) by Gergely Orosz is a good summary of the most common equity compensation variants.
+- [How We Can Fix Startup Stock Options](https://pete.wtf/blog/how-we-can-fix-startup-stock-options/) is a good post by Pete Cheslock on optimizing the tax implications of your stock options.
 - [The Holloway Guide to Equity Compensation](https://www.holloway.com/g/equity-compensation) - Stock options, RSUs, job offers, and taxes — a detailed reference, including hundreds of resources, explained from the ground up.
 - [Understanding Startup Stock Options](https://medium.com/swlh/understanding-startup-stock-options-4bf9cc26089e) - Ben Beltzer explains when you should exercise, how to get paid out, how much you'll make, and how much tax you'll probably have to pay (get advice from your own accountant, don't rely on a blog post).
 - [What I Wish I'd Known About Equity Before Joining A Unicorn](https://gist.github.com/yossorion/4965df74fd6da6cdc280ec57e83a202d) - This is an excellent (though USA-centric) summary of how to value stock options and what the tax implications are and how to minimize potential tax. I heartily recommend reading it before you accept any offers involving stock or stock options as part of your compensation.
