@@ -1,8 +1,11 @@
 # sysadmin-reading-list
 
 [![GitHub stars](https://img.shields.io/github/stars/unixorn/sysadmin-reading-list.svg)](https://github.com/unixorn/sysadmin-reading-list/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/unixorn/sysadmin-reading-list.svg)
 ![Awesomebot link checking](https://github.com/unixorn/sysadmin-reading-list/actions/workflows/awesomebot.yml/badge.svg)
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/unixorn/sysadmin-reading-list/main.svg)](https://github.com/unixorn/sysadmin-reading-list)
+
+Copyright 2017-2024 Joe Block <jpb@unixorn.net>. See [LICENSE.md](https://github.com/unixorn/sysadmin-reading-list/blob/main/LICENSE.md) for details.
 
 A reading list for the larval stage sysadmin/SRE. This list is focused on the UNIX family of OSes, but PRs about other OSes are welcome.
 
@@ -79,19 +82,23 @@ So you've got your first sysadmin/sre job or internship. Congratulations, it's g
 
 - [A Few Ops Lessions We All Learn the Hard Way](https://www.netmeister.org/blog/ops-lessons.html) - A collection of lessons that everyone in ops and SRE inevitably learns. You may not personally experience all of them, but they'll ring true after you're in ops for a while.
 - [Clean Code](https://smile.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) - Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code "on the fly" into a book that will instill within you the values of a software craftsman and make you a better programmer-but only if you work at it.
-- [Continuous Delivery](https://smile.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) - A book that has rapidly become *the* guide to planning and implementing build pipelines.
+- [Continuous Delivery](https://smile.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) - A book that has rapidly become _the_ guide to planning and implementing build pipelines.
 - [DevOps Roadmap](https://roadmap.sh/devops) - Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.
 - [Effective DevOps](http://shop.oreilly.com/product/0636920039846.do) - A practical guide for creating affinity among teams and promoting efficient tool usage in your company.
 - [Git Magic (free ebook)](http://www-cs-students.stanford.edu/~blynn/gitmagic/) - `git` is a version control Swiss army knife. A reliable versatile multipurpose revision control tool whose extraordinary flexibility makes it tricky to learn, let alone master.
+- [GNU Coreutils Package Guide](https://blog.robertelder.org/gnu-coreutils-package-guide/) - Robert Elder made a short YouTube video describing every command in the GNU Coreutils package. I guarantee you will discover something new.
 - [Hello DNS](https://github.com/ahupowerdns/hello-dns) - Every sysadmin/sre needs to know how DNS works. Start with [DNS Basics](https://github.com/ahupowerdns/hello-dns/blob/master/basic.md) it's a good introduction.
 - [Lean Startup](https://smile.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898) or [Lean Enterprise](https://smile.amazon.com/Lean-Enterprise-Performance-Organizations-Innovate/dp/1449368425) - This pair describes the process surrounding implementation and use of Lean principles in Startup and Enterprise organizations. There are a number of companion pieces that extend the principles to specific fields of study and implementation, such as [Lean Analytics](https://smile.amazon.com/Lean-Analytics-Better-Startup-Faster/dp/1449335675).
+- [Lessons Learned from Twenty Years of Site Reliability Engineering](https://sre.google/resources/practices-and-processes/twenty-years-of-sre-lessons-learned/) - Google blog post about lessons learned over their first 20 years running data centers.
 - [LinkedIn's School of SRE](https://github.com/linkedin/school-of-sre) - Linkedin is using this curriculum for onboarding non-traditional hires and new college grads into the SRE role.
+- [SRE Transformation: our thoughts](https://layeraleph.com/advice/2022/11/15/sre-transformation/) is a great "What is SRE and why bother?" post.
 - [Site Reliability Engineering](http://shop.oreilly.com/product/0636920041528.do) - How Google Runs Production Systems. This can be read online for free at Google's [SRE site](https://landing.google.com/sre/book/index.html).
 - [Systems Performance: Enterprise and Cloud](https://smile.amazon.com/Systems-Performance-Enterprise-Brendan-Gregg/dp/0133390098) by Brendan Gregg, this book is an award winner and a favorite of many a sysadmin and SRE, it addresses systems performance at scale.
 - [The Art of Capacity Planning](https://smile.amazon.com/Art-Capacity-Planning-Scaling-Resources-ebook/dp/B0026OR2Y0) - John Allspaw's book is a hands-on and practical guide to planning for such growth, with many techniques and considerations to help you plan, deploy, and manage web application infrastructure.
 - [The Art of Monitoring](https://artofmonitoring.com/) - James Turnbull's book on the art of modern application and infrastructure monitoring and metrics.
 - [The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations](https://smile.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002) - The results of a multi-user case study on DevOps and the practical-oriented sequel to [The Phoenix Project](http://smile.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO).
 - [The Goal](https://smile.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951/ref=zg_bs_10020725011_1) - A foundational novel on the Theory of Constraints and many other operational concerns.
+- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) - There’s one critical subject that’s rarely covered in CS programs, and is instead left to students to figure out on their own: proficiency with their tools. This course will teach you how to master the command-line, use a powerful text editor, use fancy features of version control systems, and much more!
 - [The Phoenix Project](http://smile.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO) - know why your projects are important to the business.
 - [The Practice of Cloud System Administration](https://smile.amazon.com/Practice-Cloud-System-Administration-Distributed/dp/032194318X), by Tom Limoncelli. Focuses on “distributed” or “cloud” computing and brings a DevOps/SRE sensibility to the practice of system administration. Includes case studies and examples from Google, Etsy, Twitter, Facebook, Netflix, Amazon, and other industry giants are explained in practical ways that are useful to all enterprises.
 - [Time Management for System Administrators](http://smile.amazon.com/Management-System-Administrators-Thomas-Limoncelli/dp/0596007833), by Tom Limoncelli. You're going to be pulled in a dozen different directions, if you can't manage your time you and your job performance are going to suffer.
@@ -126,7 +133,6 @@ That said, it is on every system, so every *NIX sysadmin needs to know `bash`.
 Here are some useful resources to help you step up your shell scripting game:
 
 - [The Art of the Command Line](https://github.com/jlevy/the-art-of-command-line) - A good set of notes and tips on using the command-line that is useful when working on Linux/Unix.
-- [Advancing in the Bash Shell](http://samrowe.com/wordpress/advancing-in-the-bash-shell/) - Sam Rowe's `bash` as CLI tutorial.
 - [Bash Guide For Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/) -  A practical guide which, while not always being too serious, tries to give real-life instead of theoretical examples.
 - [Bash Guide](https://mywiki.wooledge.org/BashGuide) - Gives examples of good practice when writing `bash` scripts. It is targeted at beginning users with no advanced knowledge.
 - [Bash Pitfalls](http://mywiki.wooledge.org/BashPitfalls) - Greg Wooledge has a great list of unpleasant surprises in `bash`.
@@ -145,9 +151,10 @@ Finally, remember that `bash` is not `sh`. If you're writing a script in `bash`,
 
 Often you'll find yourself in a Windows enviroment, like it or not. These resources might help you in those cases -
 
-- [Best Practices and Style guide](https://github.com/PoshCode/PowerShellPracticeAndStyle)
+- [awesome-powershell](https://github.com/janikvonrotz/awesome-powershell) - Awesome list of PowerShell resources.
+- [Best Practices and Style guide](https://github.com/PoshCode/PowerShellPracticeAndStyle) - Unofficial recommendations for better PowerShell code.
 - [Powershell Slack](http://poshcode.org) - Think of it as a virtual Powershell user's group.
-- [PowerShell.org eBooks](https://leanpub.com/u/devopscollective/)
+- [PowerShell.org eBooks](https://leanpub.com/u/devopscollective/) - A collection of PowerShell (and other) eBooks.
 
 ### Python
 
@@ -226,6 +233,7 @@ Perl has a long history of being the system administrator's friend, bringing the
 
 #### Multi-Platform
 
+- [Pulumi](https://www.pulumi.com) is similar to Terraform, in that you can configure infrastructure with code. Unlike Terraform, you can do this with conventional languages such as TypeScript, Python, and Go.
 - [Terraform](https://www.terraform.io) is a tool that allows you to configure your infrastructure as code, just like Chef/Puppet/etc allow you to manage the configuration of individual machines as code, with all the benefits of being able to diff, code review, etc. Terraform works with (as of this edit) AWS, Google Cloud, Microsoft Azure, vSphere and many other systems.
 
 #### AWS
@@ -236,19 +244,18 @@ Perl has a long history of being the system administrator's friend, bringing the
 
 #### Azure
 
-- [Az PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azurermps-6.13.0) The cross-platform (i.e. PS Core) Azure PowerShell module. Replaces the `AzureRm` module and provides a migration path from it.
+- [Az PowerShell Module](https://github.com/Azure/azure-powershell) The cross-platform (i.e. PS Core) Azure PowerShell module. Replaces the `AzureRm` module and provides a migration path from it.
 - [Azure CLI 2.0](https://github.com/Azure/azure-cli) new preview CLI interface for Azure (written in python).
 - [Azure Code Samples](https://azure.microsoft.com/en-us/documentation/samples/) samples of code showing how to interact with Azure.
 - [Azure Friday](https://azure.microsoft.com/en-us/documentation/videos/azure-friday/) "Just two engineers, a laptop and the cloud, solving problems".
 - [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates) community contributed Azure Resource Manager templates for tons of things.
-- [Azure Xplat CLI](https://github.com/Azure/azure-xplat-cli) cross platform CLI interface for Azure (written in nodejs).
 - [Official Azure Documentation](https://azure.microsoft.com/en-us/documentation/) official documentation for all Azure services.
 
 #### Google Cloud
 
-- [Introduction](https://cloud.google.com/docs/overview/) official introduction and an overview.
-- [GCP for AWS professionals](https://cloud.google.com/docs/compare/aws/) list equivalents for AWS products in GCP.
-- [GCP for Azure professionals](https://cloud.google.com/docs/compare/azure/) list equivalents for Azure products in GCP.
+- [Introduction](https://cloud.google.com/docs/overview/) is Google's official introduction and an overview.
+- [GCP for AWS professionals](https://cloud.google.com/docs/compare/aws/) lists equivalents for AWS products in GCP.
+- [GCP for Azure professionals](https://cloud.google.com/docs/compare/azure/) lists equivalents for Azure products in GCP.
 
 #### OpenStack
 
@@ -273,13 +280,13 @@ There are several good options:
 - [Ansible](http://www.ansible.com/) is designed to be minimal in nature, consistent, secure, and highly reliable. Owned & supported by Red Hat.
 - [CFEngine](https://cfengine.com) has been in continuous development since 1993.  Unlike some of its peers on this list, it is written in C and is built with speed and scalability in mind.  It should be considered for very, very large systems and for very small (think embedded) systems.
 - [Chef](http://www.opscode.com/chef/) is written in Ruby and Erlang and uses a Ruby DSL to describe system configuration.
-- [Chocolatey](https://chocolatey.org/) a Windows software management tool.
 - [Puppet](http://puppetlabs.com/) makes it easy to automate the provisioning, configuration and ongoing management of your machines and the software running on them. Make rapid, repeatable changes and automatically enforce the consistency of systems and devices – across physical and virtual machines, on premise or in the cloud.
 - [Salt](http://www.saltstack.com/) orchestrates the build and ongoing management of your infrastructure.
 
 ### Container Tooling
 
 Containers package software and all its dependencies in a single package that can be run in isolation from other containers or applications running on the server, without the overhead of a full virtual machine.
+
 #### Containerd
 
 [Containerd](https://github.com/containerd/containerd) is an industry-standard container runtime with an emphasis on simplicity, robustness and portability. It is available as a daemon for Linux and Windows, which can manage the complete container lifecycle of its host system: image transfer and storage, container execution and supervision, low-level storage and network attachments, etc.
@@ -290,7 +297,7 @@ Follow the installation instructions for your preferred platform (Currently, onl
 
 - [Getting started with containerd](https://containerd.io/docs/getting-started/)
 
-On macOS, you can use Lima, which launches Linux virtual machines with automatic file sharing, port forwarding, and [containerd](https://containerd.io/) installed. You can use the [lima xbar plugin](https://github.com/unixorn/lima-xbar-plugin) for a simple menubar application to control your Lima VMs.
+On macOS, you can use [Lima](https://github.com/lima-vm/lima) or [Colima](https://github.com/abiosoft/colima) which both launch Linux virtual machines with automatic file sharing, port forwarding, and [containerd](https://containerd.io/) installed. You can use the [lima xbar plugin](https://github.com/unixorn/lima-xbar-plugin) for a simple menubar application to control your Lima or Colima VMs.
 
 #### Docker
 
@@ -325,6 +332,7 @@ Have you ever wondered exactly what happens when you type something like `kubect
 
 #### Utilities
 
+- [k3s](https://k3s.io/) - k3s is a kubernetes distribution optimized for IOT and edge computing. It is packaged as single binaries for ARM64, ARMv7 and X86 and is ideal for a learning environment - you can set up a k3s instance in less than five minutes, and if you break it, tear it down and re-install it just as quickly.
 - [krew](https://github.com/kubernetes-sigs/krew/) - Makes it easy to use [kubectl plugins](https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/). `krew` helps you discover plugins, install and manage them on your machine. It is similar to tools like `apt`, `dnf` or `brew`. Today, over 70 `kubectl` plugins are available on `krew`.
 - [kubectx](https://github.com/ahmetb/kubectx) - Provides the `kubectx` command, which makes it easy to switch between clusters specified in your `.kube/config`, and `kubens`, which helps you switch between Kubernetes namespaces smoothly.
 
@@ -344,7 +352,6 @@ There are several good projects for monitoring.
 
 Many of the tools you're going to use have JSON output options. Trying to parse JSON with `grep` or `awk` is a world of pain, fortunately there is [jq](https://github.com/stedolan/jq), a lightweight JSON processor you can use to slice out useful bits of the output for use in scripts similarly to how you can use `awk` or `sed` on text files.
 
-
 - Adam Gordon Bell wrote a good [Introduction to JQ](https://earthly.dev/blog/jq-select/).
 - There's an online playground at [https://jqplay.org/](https://jqplay.org/) you can use to experiment.
 
@@ -356,7 +363,7 @@ Enter regexes and the `grep` family of tools.
 
 When you have a multi-gigabyte logfile, it's a lot less painful to look at just the entries generated by the service that you got alerted about. Even better to only look at the error messages from the service, and something as basic as `grep -i yourservice < log | grep -i errorcode` can convert a potentially multi-hour ordeal into a quick minute or two task.
 
-- [autoregex](https://www.autoregex.xyz/home) - This site will let you paste a regex in and have it translate it to English, or make an English statement like "First character A, second character B, up to three B characters, then a C and end of line" and have that translated to `^A.{0,3}BC$`.
+- [autoregex](https://www.autoregex.xyz) - This site will let you paste a regex into it and have it translated to English, or make an English statement like "First character A, second character B, up to three B characters, then a C and end of line" and have that translated to `^A.{0,3}BC$`.
 - [debuggex.com](https://www.debuggex.com/) will visualize regular expressions graphically.
 - [Introducing Regular Expressions](http://shop.oreilly.com/product/0636920012337.do) - Michael Fitzgerald's O'Reilly Book is a good place to start.
 - [Regex for Noobs](https://www.janmeppe.com/blog/regex-for-noobs/) - An illustrated guide to regex that aims to provide a gentle introduction for people who never have fiddled with regex, want to, but are kind of intimidated by the whole thing.
@@ -392,10 +399,10 @@ Here are a few articles that while focused on `git` commit messages apply to any
 
 #### Git
 
-Whether or not your shop uses `git` internally, you're going to end up needing to use it for the many useful things on GitHub and GitLab.
+Whether or not your shop uses `git` internally, you're going to end up needing to use it for the many useful tools and references hosted on GitHub and GitLab.
 
-- [19 Git Tips for Everyday Use](http://www.alexkras.com/19-git-tips-for-everyday-use/) - a good set of starter tips for using git.
-- [git-extra-commands](https://github.com/unixorn/git-extra-commands) - is a collection of extra `git` helper scripts.
+- [19 Git Tips for Everyday Use](http://www.alexkras.com/19-git-tips-for-everyday-use/) - a good set of starter tips for using `git`.
+- [git-extra-commands](https://github.com/unixorn/git-extra-commands) - a misleadingly named collection of extra `git` helper scripts, blog posts, tutorials and videos.
 - [git-flight-rules](https://github.com/k88hudson/git-flight-rules) is Kate Hudson's guide to using `git` in specific situations.
 - [git-tips/tips](https://github.com/git-tips/tips) is a collection of `git` tips
 - [Pro Git](https://git-scm.com/book/en/v2) by Scott Chacon and Ben Straub is a great overall resource for `git`.
@@ -405,6 +412,7 @@ Whether or not your shop uses `git` internally, you're going to end up needing t
 ### SSH
 
 - [awesome-ssh](https://github.com/moul/awesome-ssh) - A curated list of `ssh` apps, libraries and other resources.
+- [drduh Yubikey-Guide](https://github.com/drduh/YubiKey-Guide) - A comprehensive guide to using Yubikey hardware tokens with SSH and GPG.
 - [SSH, The Secure Shell: The Definitive Guide, 2nd Edition](http://shop.oreilly.com/product/9780596008956.do)
 
 ### Testing
@@ -423,7 +431,7 @@ However, you should care about your tools.  You should be able to use them effic
 
 #### Vim
 
-`vim` is a reality of life for SysAdmins.  It is the one editor you can be sure is installed in even the most minimal *NIX or linux install. You must be able to do at least basic edits with it.  You don't need to love it, but you _will_ have to use it.
+`vim` is a reality of life for SysAdmins.  It is the one editor you can be sure is installed in even the most minimal *NIX or linux install. You must be able to do at least basic edits with it.  You don't need to love it, but eventually you _will_ have to use it.
 
 - [Damian Conway, "More Instantly Better Vim" - OSCON 2013](https://www.youtube.com/watch?v=aHm36-na4-4)
 - [vi and Vim Editors Pocket Reference, 2nd Edition](http://shop.oreilly.com/product/0636920010913.do)
@@ -438,17 +446,17 @@ If you want to get a taste of what `emacs` can do, you can defer to Magnars and 
 
 One of the biggest problems with `emacs` is that the defaults present a fairly different experience to what people are used to in other editors. Your first stop should be learning the basics using the built-in tutorial, followed by the mini-manual from tuhdo:
 
--Type `ctrl-h`, followed closely by `t` from within `emacs` to see the tutorial [http://tuhdo.github.io/index.html](http://tuhdo.github.io/index.html)
+- Type `ctrl-h`, followed closely by `t` from within `emacs` to see the tutorial [http://tuhdo.github.io/index.html](http://tuhdo.github.io/index.html).
 
 Emacs can be can be made to look and act relatively modern if that's your desire:
 
 - [http://emacs.sexy/](http://emacs.sexy/)
 
-If you're looking for `emacs` packages, the following online package index is the most popular, and tracks many:
+If you're looking for `emacs` packages, the following online package index is the most popular, and tracks many of them:
 
 - [http://melpa.org/](http://melpa.org/)
 
-There are several excellent starter kits out there, with varying delineations of wizz-bang. Here are some starter kits, with spacemacs being the most popular:
+There are several excellent starter kits out there, with varying delineations of whiz-bang. Here are some starter kits, with spacemacs being the most popular:
 
 - [bbatsov/prelude](https://github.com/bbatsov/prelude)
 - [hlissner/doom-emacs](https://github.com/hlissner/doom-emacs)
@@ -463,7 +471,7 @@ Here are some `emacs` configurations for inspiration:
 
 #### Visual Editors and IDEs
 
-Use tools with which you are productive.  If you want to use a GUI Text Editor or IDE, don't let anyone give you a hard time about that.
+Use tools which help you be productive.  If you want to use a GUI Text Editor or IDE, don't let anyone give you a hard time about that.
 
 There are GUI versions of `vim` and `emacs` that have ardent followers.
 
@@ -490,15 +498,28 @@ There are GUI versions of `vim` and `emacs` that have ardent followers.
 
 - [DevOpsChat Slack](https://devopschat.co/) is another community of DevOps minded folk with a diverse set of topic specific chat rooms. Home to Arrested DevOps.
 - [Hangops Slack](https://signup.hangops.com/) is a community of DevOps minded folk with many subject focused chat rooms.
+- [Platform Engineering](https://platformengineering.org/) is a large community focused on platform engineering. Their [slack](https://platformengineering.org/slack-rd) has more than 15,000 users.
 - [PowerShell Slack](http://poshcode.org/) is a community of PowerShell enthusiasts and Windows centric DevOps topics.
 
 ## Windows Administration
 
-Help wanted here.
+### Package Managers
+
+- [Chocolatey](https://chocolatey.org/) - Having existed much longer than WinGet, Chocolatey has a large ecosystem of packages.
+- [Scoop](https://github.com/ScoopInstaller/Scoop) - A simple, no frills package manager. Compared to Chocolatey, package manifests are easier to write and it munges with the system much less.
+- [WinGet](https://github.com/microsoft/winget-cli) - The official pakcage manger, useful for installing applications, PowerShell scripts, and more.
+
+## Setup
+
+- [privatezilla](https://github.com/builtbybel/privatezilla) - Checks (and optionally fixes) your Windows 10 installation for privacy violations with a GUI interface.
+- [Win-Debloat-Tools](https://github.com/LeDragoX/Win-Debloat-Tools) - Another tool for fixing privacy and performance issues on Windows 10 and 11.
+
+## Tools
+
+- [dbatools](https://github.com/dataplat/dbatools) - A set of PowerShell commands to streamline SQL Server management.
+- [gsudo](https://github.com/gerardog/gsudo) - In a pinch, this allows you to run a certain command as Administrator, without running an console session.
 
 ## Other Resources
-
-Packetlife has some great cheat sheets and posters [here](https://packetlife.net/library/cheat-sheets/) for a lot of applications (`wireshark` and `tcpdump` for example) and networking principles. Well worth a look, even if you think you know the apps in question.
 
 ### Free Services
 
@@ -524,15 +545,15 @@ Packetlife has some great cheat sheets and posters [here](https://packetlife.net
 
 ### Career
 
-- Alice Goldfuss wrote an excellent article, [How to Get Into SRE](https://blog.alicegoldfuss.com/how-to-get-into-sre/), about her path to becoming an SRE.
-- Alice also gave a great presentation - [Passing the Console: Fostering the Next Generation of Ops Professionals](https://www.usenix.org/conference/lisa16/conference-program/presentation/goldfuss) at LISA16.
 - Julia Evans wrote a couple of great resources on making your 1-on-1's with your manager more effective. 1-on-1s should _not_ just be a status report on what you're working on - you should be using them to focus on more big picture goals (both yours and the organizations) and your career. Read her article on [1-on-1 ideas](https://jvns.ca/blog/2015/03/06/1-1-topic-ideas/), and I recommend buying her [Help, I have a Manager!](https://wizardzines.com/zines/manager/) zine.
+- [Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/) by Patrick Mackenzie is an article I wish I could have read at the start of my career.
+- [How to Get Into SRE](https://blog.alicegoldfuss.com/how-to-get-into-sre/) by Alice Goldfuss is an excelent article about her path to becoming an SRE. Alice also gave a great presentation - [Passing the Console: Fostering the Next Generation of Ops Professionals](https://www.usenix.org/conference/lisa16/conference-program/presentation/goldfuss) at LISA16.
 
 ### Communication
 
 Writing good documentation and design docs is as important as writing code. The more senior you are, the more writing you're going to have to do - communication skills are a must.
 
-- Email - Like it or not, you're going to write a _lot_ of email in the course of your work. Lazarus Lazaridis wrote a good article on [Composing Better Emails](https://iridakos.com/how-to/2019/06/26/composing-better-emails.html)
+- Email - Like it or not, you're going to write a _lot_ of email in the course of your work. Make them good. Lazarus Lazaridis wrote a good article on [Composing Better Emails](https://iridakos.com/how-to/2019/06/26/composing-better-emails.html)
 - Gergely Orosz wrote an excellent blog post about [Undervalued Software Engineering Skills: Writing Well](https://blog.pragmaticengineer.com/on-writing-well/).
 
 ### Finance/Salary
@@ -549,7 +570,7 @@ Writing good documentation and design docs is as important as writing code. The 
 
 ## License
 
-This repository is copyright 2017-2021 Joseph Block under a [Attribution-NonCommercial-ShareAlike 4.0 International](#attribution-noncommercial-sharealike-40-international) license.
+This repository is copyright 2017-2024 Joseph Block under a [Attribution-NonCommercial-ShareAlike 4.0 International](#attribution-noncommercial-sharealike-40-international) license.
 
 ## Thanks
 
